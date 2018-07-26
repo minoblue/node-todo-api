@@ -1,8 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+const {Todo} = require('./models/todos');
+const {User} = require('.models/users');
+
 
 //Configure mongoose's promise to global promise
 mongoose.promise = global.Promise;
+
 
 const app = express();
 

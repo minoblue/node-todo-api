@@ -4,7 +4,7 @@ const {Schema} = mongoose;
 
 const UserSchema = new Schema({
     name:{
-        type:Strin
+        type:String,
         required:[true,'Name is required']
     },
     age:{
